@@ -1,20 +1,35 @@
-.single-player-button {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Center the text (if needed) */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the container inline-block */
-    font-size: 16px; /* Increase font size */
-    margin: 4px 2px; /* Some margin */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
-    transition-duration: 0.4s; /* 0.4 seconds transition effect */
-}
-
-.single-player-button:hover {
-    background-color: white; /* White background on hover */
-    color: black; /* Black text on hover */
-    border: 2px solid #4CAF50; /* Green border on hover */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .redirect-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px; /* Add margin for space between buttons */
+        }
+        .redirect-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button class="redirect-button" onclick="window.location.href='https://munteancd.pythonanywhere.com/'">Single Player</button>
+    <button class="redirect-button" onclick="window.location.href='https://2playersyams.glitch.me/'">2 Players</button>
+</body>
+</html>
